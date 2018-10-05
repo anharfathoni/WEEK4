@@ -1,3 +1,5 @@
+//[Exercises 8] Urutkan Abjad
+
 function urutkanAbjad(str) {
     var strArr = []
     var newStr = ""

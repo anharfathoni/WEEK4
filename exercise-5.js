@@ -1,3 +1,5 @@
+//[Exercises 5] Ubah Huruf
+
 function ubahHuruf(kata) {
     var ubah = ""
     for (var i = 0; i < kata.length; i++) {

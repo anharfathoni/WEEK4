@@ -1,3 +1,5 @@
+//[Exercises 10] Cek AB
+
 function checkAB(num) {
     var checkA = []
     var checkB = []

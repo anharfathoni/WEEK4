@@ -1,3 +1,5 @@
+//[Exercises 2] Faktor Persekutuan Terbesar
+
 function fpb(angka1, angka2) {
     var arr1 = []
     var arr2 = []

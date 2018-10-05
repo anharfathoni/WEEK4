@@ -1,5 +1,9 @@
-function changeMe(arr) {
+//[Exercises 11] Change me
 
+function changeMe(arr) {
+    if (arr.length === 0) {
+        console.log("")
+    }
     for (var i = 0; i < arr.length; i++) {
         var name = ("" + (i + 1) + "." + arr[i][0] + " " + arr[i][1])
         var umur = "" + (2018 - arr[i][3])
@@ -26,7 +30,7 @@ var input = [
     ['Robert', 'Downey', 'Male']
 ]
 
-changeMe(input);
+//changeMe(input);
 
 // 1. Christ Evans:
 // { firstName: 'Christ',
@@ -40,4 +44,4 @@ changeMe(input);
 //   age: 'Invalid Birth Year' }
 
 
-//changeMe([]); // ""
+changeMe([]); // ""

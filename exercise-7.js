@@ -1,3 +1,5 @@
+//[Exercises 7] Digit Perkalian Minimum
+
 function digitPerkalianMinimum(angka) {
     var faktor = []
     var temp = ""

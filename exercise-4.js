@@ -1,3 +1,5 @@
+//[Exercises 4] Cari Modus
+
 function cariModus(arr) {
     var banyakperulangan = 1
     for (var i = 0; i < arr.length - 1; i++) {

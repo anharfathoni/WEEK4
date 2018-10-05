@@ -1,3 +1,5 @@
+//[Exercises 18] Kali Terus Rekursif
+
 function kaliTerusRekursif(angka) {
     var strAngka = String(angka)
 

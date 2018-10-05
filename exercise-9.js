@@ -1,3 +1,5 @@
+//[Exercises 9] Tukar Ukuran
+
 function tukarBesarKecil(kalimat) {
     var kalimat2 = ""
     for (var i = 0; i < kalimat.length; i++) {

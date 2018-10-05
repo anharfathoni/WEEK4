@@ -1,3 +1,5 @@
+//[Exercises 15] Password Generator
+
 function changeVocals(str) {
     var ubahStr = ""
     for (var i = 0; i < str.length; i++) {

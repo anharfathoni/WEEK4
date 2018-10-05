@@ -1,3 +1,5 @@
+//[Exercises 16] Makan Terus Rekursif
+
 function makanTerusRekursif(waktu) {
     var jumlahmakan = 1;
     if (waktu > 0) {

@@ -1,3 +1,5 @@
+//[Exercises 17] Total Digit Rekursif
+
 function totalDigitRekursif(angka) {
     var strAngka = String(angka)
     var sum = 0
