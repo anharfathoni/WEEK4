@@ -1,0 +1,40 @@
+function fpb(angka1, angka2) {
+    var arr1 = []
+    var arr2 = []
+    var arrsama = []
+
+    //cari faktor dari masing masing angka dan disimpan ke masing2 array
+    for (var i = 0; i < angka1; i++) {
+        if (angka1 % i === 0) {
+            arr1.push(i)
+        }
+    }
+    //console.log(arr1)
+    for (var i = 0; i < angka2; i++) {
+        if (angka2 % i === 0) {
+            arr2.push(i)
+        }
+    }
+    //console.log(arr2)
+
+    // cek nilai pada array1 dan array2, jika sama masukkan ke array baru
+    for (var i = 0; i < arr1.length; i++) {
+        for (var j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                arrsama.push(arr1[i])
+            }
+        }
+    }
+
+    //console.log(arrsama)
+    //cari nilai terbesar
+    arrsama.sort(function(a, b) { return b - a })
+    return arrsama[0]
+}
+
+// TEST CASES
+console.log(fpb(12, 16)); // 4
+console.log(fpb(50, 40)); // 10
+console.log(fpb(22, 99)); // 11
+console.log(fpb(24, 36)); // 12
+console.log(fpb(17, 23)); // 1
