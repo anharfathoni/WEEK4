@@ -1,22 +1,37 @@
-function LetterChanges(str) {
+function cariModus(arr) {
+    var banyakperulangan = 1
+    for (var i = 0; i < arr.length - 1; i++) {
+        var count = 1
+        var modus
 
-    // we will replace every letter in the string with the letter following it
-    // by first getting the charCode number of the letter, adding 1 to it, then 
-    // converting this new charCode number to a letter using the fromCharCode function
-    // we also check to see if the character is z and if so we simply convert the z to an a
-    var converted = str.replace(/[a-z]/gi, function(char) {
-        return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
-    });
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                count += 1
+            }
+        }
+        // console.log("array", arr[i])
+        // console.log("count", count)
 
-    // we have now successfully converted each letter to the letter following it
-    // in the alphabet, and all we need to do now is capitalize the vowels
-    var capitalized = converted.replace(/a|e|i|o|u/gi, function(vowel) {
-        return vowel.toUpperCase();
-    });
+        if (banyakperulangan < count) {
+            banyakperulangan = count
+            modus = arr[i]
+                // console.log("modus ", modus)
+        }
 
-    // return the final string
-    return capitalized;
+        // console.log("perulangan", banyakperulangan)
 
+    }
+    if (banyakperulangan === arr.length || banyakperulangan === 1) {
+        return -1
+    } else {
+        return modus
+    }
+    //return modus
 }
 
-console.log(LetterChanges("fun times!"))
+// TEST CASES
+console.log(cariModus([10, 4, 5, 2, 4])); // 4
+console.log(cariModus([5, 10, 10, 6, 5])); // 5
+console.log(cariModus([10, 3, 1, 2, 5])); // -1
+console.log(cariModus([1, 2, 3, 3, 4, 5])); // 3
+console.log(cariModus([7, 7, 7, 7, 7])); // -1
