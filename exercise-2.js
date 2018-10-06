@@ -6,13 +6,13 @@ function fpb(angka1, angka2) {
     var arrsama = []
 
     //cari faktor dari masing masing angka dan disimpan ke masing2 array
-    for (var i = 0; i < angka1; i++) {
+    for (var i = 1; i <= angka1; i++) {
         if (angka1 % i === 0) {
             arr1.push(i)
         }
     }
     //console.log(arr1)
-    for (var i = 0; i < angka2; i++) {
+    for (var i = 1; i <= angka2; i++) {
         if (angka2 % i === 0) {
             arr2.push(i)
         }
@@ -40,3 +40,5 @@ console.log(fpb(50, 40)); // 10
 console.log(fpb(22, 99)); // 11
 console.log(fpb(24, 36)); // 12
 console.log(fpb(17, 23)); // 1
+console.log(fpb(16, 16)); // 16
+console.log(fpb(23, 23)); // 23

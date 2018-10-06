@@ -2,6 +2,12 @@
 
 function angkaPrima(angka) {
     checkPrima = true
+
+    if (angka === 1) {
+        return false
+            //The definition of a prime number is a positive integer that has exactly two positive divisors. 
+            //However, 1 only has one positive divisor (1 itself), so it is not prime.
+    }
     if (angka === 2) {
         return true
     } else {
@@ -21,3 +27,5 @@ console.log(angkaPrima(7)); // true
 console.log(angkaPrima(6)); // false
 console.log(angkaPrima(23)); // true
 console.log(angkaPrima(33)); // false
+
+console.log(angkaPrima(1)); // false
