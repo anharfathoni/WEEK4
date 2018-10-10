@@ -1,3 +1,5 @@
+//[Exercises 13] Toko X
+
 function countProfit(shoppers) {
     var result = []
 
